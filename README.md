@@ -149,3 +149,39 @@ Git is a **distributed version control system (DVCS)** used to track changes in 
 - **Conflict**: A situation where Git cannot automatically merge changes, requiring manual resolution.
 - **Pull Request (PR) / Merge Request (MR)**: A request to merge changes from one branch into another, often used for code review.
 
+>this part made by Didusenko Oleksandr
+
+---
+
+A **"commit"** is the process of saving changes in a version control system like Git. When you make a commit, you're essentially taking a "snapshot" of the current state of your project and recording it in the project's history. This allows you to track and review all changes made over time.
+
+### How do commits help track changes?
+1. **Saving the project's state**: Each commit saves a specific version of the files along with a description of the changes made (the commit message). This makes it easier to understand what was changed and why.
+
+2. **History of changes**: Commits create a chronological log of all changes in the project. Using commands like `git log`, you can see who made changes, when, and what was modified.
+
+3. **Reverting to previous versions**: If something goes wrong, commits allow you to go back to a previous version of the project by selecting a specific commit.
+
+4. **Collaboration**: In team projects, commits allow developers to see which parts of the project were modified by others.
+
+5. **Identifying changes**: Each commit has a unique identifier (a hash), which makes it easy to reference a specific change in the project's history.
+
+### How to create a commit in Git?
+1. **Stage the files (add them to the staging area)**:
+   ```
+   git add <file_name>   # Add a specific file
+   git add .             # Add all changed files
+   ```
+
+2. **Create the commit**:
+   ```
+   git commit -m "Description of the changes"
+   ```
+
+   The description should be clear and informative, e.g., `"Added login functionality"` or `"Fixed a bug in the display function"`.
+
+### Why are commits important?
+- **Structure**: Commits help keep the project organized by documenting every change made, which makes it easier to understand the code, even after a long time.
+- **Data Safety**: Commits reduce the risk of losing work since the change history is always accessible.
+- **Teamwork**: In collaborative environments, commits make it easy to keep track of who made what changes.
+

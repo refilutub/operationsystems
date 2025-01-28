@@ -19,7 +19,7 @@
 ### Completed Works:
 
 #### **СРС_WORK-CASE**
-- [x] [СРС_WORK-CASE 1](https://github.com/refilutub/operationsystems/tree/SRC_WORK-CASE-1)
+- [x] [СРС_WORK-CASE 1](https://github.com/refilutub/operationsystems/tree/%D0%A1%D0%A0%D0%A1_WORK-CASE-%E2%84%961)
 - [ ] [СРС_WORK-CASE 2](https://github.com/refilutub/operationsystems/tree/SRC_WORK-CASE-2)
 - [ ] [СРС_WORK-CASE 3](https://github.com/refilutub/operationsystems/tree/SRC_WORK-CASE-3)
 - [ ] [СРС_WORK-CASE 4](https://github.com/refilutub/operationsystems/tree/SRC_WORK-CASE-4)

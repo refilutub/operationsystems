@@ -4,7 +4,7 @@
 > - Maksym Borsuk  
 > - Didusenko Oleksandr
 
->this part is made by refilutub
+>this part is made by Maksym Borsuk 
 
 Git is a **distributed version control system (DVCS)** used to track changes in source code during software development. It enables multiple developers to collaborate on a project, manage different versions of code, and maintain a complete history of changes.
 

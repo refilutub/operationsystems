@@ -149,9 +149,11 @@ Git is a **distributed version control system (DVCS)** used to track changes in 
 - **Conflict**: A situation where Git cannot automatically merge changes, requiring manual resolution.
 - **Pull Request (PR) / Merge Request (MR)**: A request to merge changes from one branch into another, often used for code review.
 
+---
+
 >this part made by Didusenko Oleksandr
 
----
+
 
 A **"commit"** is the process of saving changes in a version control system like Git. When you make a commit, you're essentially taking a "snapshot" of the current state of your project and recording it in the project's history. This allows you to track and review all changes made over time.
 

@@ -1,10 +1,8 @@
 # Git: Key Concepts, Commands, and Workflow
 
-> Contributors:  
-> - Maksym Borsuk  
-> - Didusenko Oleksandr
+>[!IMPORTANT]
+> this part made by Maksym Borsuk
 
->this part is made by Maksym Borsuk 
 
 Git is a **distributed version control system (DVCS)** used to track changes in source code during software development. It enables multiple developers to collaborate on a project, manage different versions of code, and maintain a complete history of changes.
 
@@ -151,6 +149,7 @@ Git is a **distributed version control system (DVCS)** used to track changes in 
 
 ---
 
+>[!IMPORTANT]
 >this part made by Didusenko Oleksandr
 
 

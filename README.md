@@ -151,7 +151,7 @@
 >[!IMPORTANT]
 >
 
-### 1. Опрацюйте всі приклади команд, що представлені у лабораторній роботі курсу NDG Linux Essentials - Lab 5: Command Line Skills та Lab 6: Getting Help. Створіть таблицю для опису цих команд
+## 1. Опрацюйте всі приклади команд, що представлені у лабораторній роботі курсу NDG Linux Essentials - Lab 5: Command Line Skills та Lab 6: Getting Help. Створіть таблицю для опису цих команд
 | **Command**        | **Purpose and Functionality**                                                                 |
 |--------------------|---------------------------------------------------------------------------------------------|
 | `ls`               | Lists files and directories in the current working directory.                               |
@@ -206,15 +206,50 @@
 | `-u`, `--utc`, `--universal`| Prints or sets the Coordinated Universal Time (UTC) instead of the local time zone. |
 | `--help`                    | Displays help information for a command. Example: `date --help`.                     |
 
-### 2. Робота в в терміналі (закріплення практичних навичок) обов'язково представити свої скріншоти:
+## 2. Робота в в терміналі (закріплення практичних навичок) обов'язково представити свої скріншоти:
 
+<details>
+ <summary><h3>Робота зі змінними (Variables) та псевдонімами (Aliases) в терміналі</h3></summary>
+ <div>
+ <img src="assets/1varname.jpg">
+ <img src="assets/1alias.jpg">
+ <img src="assets/1cal.jpg">
+</div>
+</details>
 
+<details>
+ <summary><h3>Робота з функціями (Functions) в терміналі</h3></summary>
+ <div>
+ <img src="assets/2studentsreport.jpg">
+</div>
+</details>
+
+<details>
+ <summary><h3>Робота з лапками (Quoting) в терміналі.</h3></summary>
+ <div>
+ <img src="assets/3calendar.jpg">
+</div>
+</details>
+
+<details>
+ <summary><h3>Робота з інструкціями керування (Control Statements) в термінал</h3></summary>
+ <div>
+ <img src="assets/isit.jpg">
+</div>
+</details>
+
+<details>
+ <summary><h3>Робота з командами довідки (Man Pages) в терміналі</h3></summary>
+ <div>
+ <img src="assets/uname.jpg">
+</div>
+</details>
 
 ---
 
 ### Відповіді на контрольні запитання  
 >[!IMPORTANT]
->
+> ![made-by-borsuk-maksym](https://github.com/user-attachments/assets/68d0a6b6-134b-4446-a841-61b9dc7c958b)
 
 ---
 

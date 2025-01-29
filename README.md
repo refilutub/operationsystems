@@ -249,11 +249,11 @@
 
 ### Відповіді на контрольні запитання  
 >[!IMPORTANT]
-> ![made-by-borsuk-maksym](https://github.com/user-attachments/assets/68d0a6b6-134b-4446-a841-61b9dc7c958b)
+> 1
 
 ---
 
+## Висновки  
+
 >[!IMPORTANT]
 > 1
-
-## Висновки  

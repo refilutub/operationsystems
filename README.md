@@ -1,57 +1,100 @@
 
+<div
+ align="center">
+  <img src="https://github.com/user-attachments/assets/dcdd0d7c-164c-4a93-a6d8-84b6015c07aa" alt="exolutioneast">
+</div>
 <div align="center">
-  <img src="https://github.com/user-attachments/assets/dcdd0d7c-164c-4a93-a6d8-84b6015c07aa" height="200" width="300" alt="exolutioneast">
+
+### **Київський фаховий коледж зв’язку**  
+### *Циклова комісія комп’ютерної та програмної інженерії*  
+
+<br/><br/><br/><br/>
+
+
+### **ЗВІТ ПО ВИКОНАННЮ** 
+### **ЛАБОРАТОРНОЇ РОБОТИ №1**  
+### *з дисципліни: «Операційні системи»*  
+
+  
+### **Тема:** *«Знайомство з робочим середовищем віртуальних машин та особливостями операційної системи Linux»*  
+
+<br/>
+
 </div>
-<div>
-  <img src="https://github.com/user-attachments/assets/b892ad7e-8842-4b58-9b43-ca318ffc4ef1" height=50 width=50>
+
+<div align="right">
+
+### **Виконали студенти:**  
+**Групи РПЗ-23а**  
+**Команда:** Борсук М.Г., Дідусенко О.Ю.  
+**Перевірила:** Сушанова В.С.  
+
 </div>
+
+<div align="center">
+
+<br/>
+
+### **Київ – 2025**  
+
+</div>
+
 
 ---
 
-### Знайомство з робочим середовищем віртуальних машин та особливостями операційної системи Linux
+### Робота студентів групи РПЗ-23а Команда 1: Борсука М.Г., Дідусенка О.Ю.
 
+
+## Мета роботи:  
+1. Знайомство з інтерфейсами ОС Linux.
+2. Отримання практичних навиків роботи в середовищах ОС Linux та мобільної ОС – їх графічною оболонкою, входом і виходом з системи, ознайомлення зі структурою робочого столу, вивчення основних дій та налаштувань при роботі в системі
+
+
+---
+
+## Матеріальне забезпечення занять  
+1. ЕОМ типу IBM PC.
+2. ОС сімейства Windows та віртуальна машина Virtual Box (Oracle).
+3. ОС GNU/Linux (будь-який дистрибутив).
+4. Сайт мережевої академії Cisco netacad.com та його онлайн курси по Linux
+
+---
+
+## Завдання для попередньої підготовки  
+
+### 
 >[!IMPORTANT]
-> this part was made by Maksym Borsuk
+> ![made-by-borsuk-maksym](https://github.com/user-attachments/assets/68d0a6b6-134b-4446-a841-61b9dc7c958b)
+
 ### Терміни
+### 1. Прочитайте короткі теоретичні відомості до лабораторної роботи та зробіть невеликий словник базових англійських термінів з питань призначення команд та їх параметрів.
 
-1. **Virtual Machine (VM)**  
-   A VM is a software-based simulation of a physical computer. It allows multiple operating systems to run on the same physical machine by emulating hardware and running a guest OS.
 
-2. **Hypervisor**  
-   A hypervisor is software that manages VM. It allows for the creation, execution, and management of VMs on a host machine, either directly (Type 1) or using a host OS (Type 2).
-
-3. **Type 1 Hypervisor**  
-   A type 1 hypervisor runs directly on the host machine’s hardware, with no underlying operating system. It's more efficient as it doesn’t rely on a host OS to manage resources.
-
-4. **Type 2 Hypervisor**  
-   A type 2 hypervisor runs on top of a host OS, relying on the host OS for resource management and access to hardware. It is typically slower than type 1 but easier to set up and use.
-
-5. **VirtualBox**  
-   VirtualBox is a Type 2 hypervisor by Oracle that allows users to run multiple guest operating systems on a single physical machine. It provides features like snapshots and seamless window integration.
-
-6. **Kernel**  
-   The kernel is the core part of an operating system, responsible for managing system resources, hardware, and communication between software and hardware.
-
-7. **Binary Translation**  
-   Binary translation is a method used by some VM monitors to convert non-native instructions into instructions that the host machine can understand, improving performance.
-
-8. **Guest OS**  
-   A guest OS is the operating system running inside a virtual machine, separate from the host operating system. It behaves as though it is running on its own physical machine.
-
-9. **Host OS**  
-   The host OS is the operating system running on the physical machine, providing resources for virtual machines and managing hardware.
-
-10. **JVM (Java Virtual Machine)**  
-   The JVM is a VM that enables Java applications to run on any platform. It interprets bytecode into machine code that can be executed on different hardware architectures.
+| English Term                    | Ukrainian Term                   |
+|----------------------------------|-----------------------------------|
+| Virtual Machine                  | Віртуальна машина                 |
+| Hypervisor                       | Гіпервізор                        |
+| Binary Translation               | Бінарний переклад                 |
+| Linux Kernel                     | Ядро Linux                        |
+| Open Source                      | Відкритий код                     |
+| Distribution                     | Дистрибутив                       |
+| Command Line Interface (CLI)     | Інтерфейс командного рядка (CLI)  |
+| Graphical User Interface (GUI)   | Графічний інтерфейс користувача   |
+| JVM (Java Virtual Machine)       | Віртуальна машина Java (JVM)      |
+| Guest Operating System           | Гостьова операційна система       |
 
 ---
 
-### Гіпервізор та його типи
+### 2. Гіпервізор та його типи
 
-A **hypervisor** is a software layer that allows multiple operating systems to run on a single physical machine. It works by abstracting the hardware to create VMs. There are two main types of hypervisors:
+- **hypervisor**
+  Іs a software layer that allows multiple operating systems to run on a single physical machine. It works by abstracting the hardware to create VMs. There are two main types of hypervisors:
 
-- **Type 1 Hypervisor**: This runs directly on the host's hardware and does not require an underlying operating system. It is more efficient and secure because it has direct control over the hardware.
-- **Type 2 Hypervisor**: This runs on top of an existing OS and uses the resources managed by the host OS. It is generally easier to use but less efficient compared to Type 1.
+- **Type 1 Hypervisor**
+  This runs directly on the host's hardware and does not require an underlying operating system. It is more efficient and secure because it has direct control over the hardware.
+  
+- **Type 2 Hypervisor**
+  This runs on top of an existing OS and uses the resources managed by the host OS. It is generally easier to use but less efficient compared to Type 1.
 
 ---
 
@@ -68,9 +111,54 @@ Oracle **VirtualBox** is a Type 2 hypervisor with the following key components a
 
 ---
 
+
+# Хід роботи
+
+>[!IMPORTANT]
+>![made-by-borsuk-maksym](https://github.com/user-attachments/assets/68d0a6b6-134b-4446-a841-61b9dc7c958b)
+
+1. **Linux - Кращі дистрибутиви 2023**  
+   [Переглянути відео](https://youtu.be/PahmJBU9HKA?si=maxRf0nZlqs2hFGU)
+
+2. **ТОП 5 ПРИЧИН ЧОМУ АЙТІШНИКУ ВАРТО ПЕРЕЙТИ НА ЛІНУКС**  
+   [Переглянути відео](https://youtu.be/bP3_mZKezvM?si=sM3Mpc9JQ_0bY9Yd)
+
+3. **Як встановити Linux разом з Windows спосіб #1 Microsoft Store**  
+   [Переглянути відео](https://youtu.be/eEdGl6HvSdM?si=WDbwa71i034D2rQj)
+
+4. **Як встановити Linux разом з Windows спосіб #2 Dual Boot**  
+   [Переглянути відео](https://youtu.be/Hfky8TEyXss?si=ilduY167LS-vKl9y)
+
+5. **Як встановлювати програми на Linux. Linux українською #1**  
+   [Переглянути відео](https://youtu.be/M8XHJME6cxI?si=L0Koom59jTRnPXnU)
+
+6. **Як зробити панель завдань Linux як у Windows. Linux українською #2**  
+   [Переглянути відео](https://youtu.be/9szAz-A4gaM?si=LxaVueluI3tKRb1r)
+
+7. **Як встановити Ubuntu на VirtualBox**  
+   [Переглянути відео](https://youtu.be/ADOaHm1VZII?si=hG5kDRsajFn7se8d)
+
+8. **The Shell (Linux)**  
+   [Переглянути матеріал](https://drive.google.com/open?id=0B0PV0_SM0LoDSVNPWUVRdUxaN2s)
+
+9. **Linux Desktop Environments: XFCE vs GNOME vs KDE**  
+   [Переглянути відео](https://youtu.be/2JBGQfPR5xQ?si=euswD7IHrODd-6JH)
+
+---
+2. Дайте відповіді на наступні питання. 
+
+>[!IMPORTANT]
+> 1
+
 ---
 
+
+
 ### Відповіді на контрольні запитання
+
+>[!IMPORTANT]
+>![made-by-borsuk-maksym](https://github.com/user-attachments/assets/68d0a6b6-134b-4446-a841-61b9dc7c958b)
+
 1. **Comparison of Type 1 and Type 2 Hypervisors:**
    - **Type 1** hypervisors run directly on hardware, offering better performance and security. 
    - **Type 2** hypervisors run on top of an existing OS, making them easier to install but less efficient. 
@@ -110,5 +198,6 @@ Oracle **VirtualBox** is a Type 2 hypervisor with the following key components a
    - **CLI** is text-based, while **GUI** is more user-friendly with visual elements.
 
 
-
-
+# Висновки
+>[!IMPORTANT]
+> 1

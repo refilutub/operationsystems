@@ -79,3 +79,4 @@
 
 2. Install the GNU/Linux operating system in a minimal configuration with terminal I/O without a graphical user interface.
  
+![Terminal](https://github.com/refilutub/operationsystems/blob/СРС_WORK-CASE-№2/Linux_kde.png)

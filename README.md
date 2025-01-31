@@ -148,9 +148,76 @@ Oracle **VirtualBox** is a Type 2 hypervisor with the following key components a
 2. Дайте відповіді на наступні питання. 
 
 >[!IMPORTANT]
-> 1
-
----
+> 1.1. Open VirtualBox and click "New"
+>
+> 1.2. Enter a name and select the operating system type and version.
+> 
+> 1.3. Allocate RAM and create virtual hard disk
+>
+> 1.4. Start the virtual machine.Follow the OS installation steps, selecting disk partitions and configurations.Complete the installation and restart.
+>
+> 2. The GNU General Public License (GNU GPL) is a widely used free software license created by the Free Software Foundation (FSF). Its main concept is to ensure that software remains free (as in freedom, not necessarily price) and can be freely used, modified, and distributed by anyone.  
+>Main Concept:
+The GNU GPL ensures that software remains open-source and free by requiring that any modified versions must also be open-source and licensed under GPL. This prevents companies from turning open-source projects into proprietary software.  
+> 3. The essence of open-source software is freedom and collaboration. It allows anyone to view, modify, and distribute the source code, promoting transparency, innovation, and community-driven development.
+>
+> 4. A distribution kit (or software distribution) is a packaged version of software that includes all necessary files, libraries, and installation scripts needed to install and run the program on a specific system.
+>      
+> 5.1. User and Access Management
+>  - Creating, modifying, and deleting users/groups (`useradd`, `usermod`, `passwd`, `groupadd`)
+>  - Managing permissions (`chmod`, `chown`, `umask`)
+>  - Configuring sudo privileges (`visudo`)
+>    
+> 5.2. File System Management
+>  - Mounting and unmounting storage (`mount`,`umount`)
+>  - Managing partitions (`fdisk`, `parted`)
+>  - Checking disk usage (`df`, `du`)
+>  - Setting up and managing file systems (`fsck`, `mkfs`)
+>    
+> 5.3. Process and System Monitoring
+>  - Viewing running processes (`ps`,`top`,`htop`)
+>  - Managing processes (`kill`, `nice`, `renice`)
+>  - Checking system logs (`journalctl`,`dmesg`,`syslog`)
+>    
+> 5.4. Network Administration
+>  - Configuring network interfaces (`ip`,`ifcondig`,`nmcli`)
+>  - Checking network connections (`ping`,`netstat`,`ss`)
+>  - Managing firewall rules (`iptables`,`firewalld`,`ufw`)
+>    
+> 5.5. Software Management
+>  - Installing and updating software (`apt`, `yum`, `dnf`, `zypper`)
+>  - Managing services (`systemctl`, `service`)
+>  - Automating tasks (`cron`, `systemd timers`)
+>    
+> 6 **Key Relationships Between Android and Linux:**
+>  - **Shared Kernel** – Android is based on a modified Linux kernel.
+>  - **No GNU Utilities** – Uses Android Runtime (ART) instead of standard Linux tools.
+>  - **Different File System & Security** – Uses SELinux and app sandboxing.
+>  - **No Standard Linux Software** – Runs APK files, not Linux packages.
+>  - **Different Development Focus** – Linux is for servers/desktops, Android is for mobile devices.
+>    
+> 7. **Main Features of Embedded Linux**
+>  - Lightweight & Modular – Optimized for low-resource devices.
+>  - Customizable – Can be stripped down to essential components.
+>  - Real-Time Capabilities – Supports RTOS-like behavior for critical tasks.
+>  - Hardware Support – Works on ARM, x86, MIPS, and more.
+>  - Open Source – Free to modify and distribute.  
+> **Scope of Embedded Linux**
+>  - Consumer Electronics – Smart TVs, routers, cameras.
+>  - Industrial Automation – PLCs, IoT controllers.
+>  - Automotive Systems – Infotainment, ADAS.
+>  - Medical Devices – Monitoring systems, diagnostic tools.
+>  - Robotics & Aerospace – Drones, satellites.
+> 
+> 8. **Change Boot Mode (Text Mode or Graphical Mode):**  
+> For Systemd-based Systems:
+>  - Text Mode (Multi-user.target):  
+> Run sudo systemctl set-default multi-user.target to set default to text mode.
+>  - Graphical Mode (Graphical.target):
+> Run sudo systemctl set-default graphical.target to set default to graphical mode.
+> **Difference Between CLI and GUI Modes:**
+>  - CLI (Command-Line Interface) – Mode with no graphical environment. Users interact via a terminal and commands. It's lightweight and often used in servers, embedded systems, and for administrative tasks.
+>  - GUI (Graphical User Interface) – Mode with a graphical environment like GNOME or KDE. Users interact with windows, icons, and menus, offering a more user-friendly experience, suitable for desktop usage.
 
 
 

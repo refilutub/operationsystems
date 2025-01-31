@@ -88,3 +88,5 @@
 4.Install an additional second graphical shell(KDE Plasma)
 
 ![KDE](https://github.com/refilutub/operationsystems/blob/СРС_WORK-CASE-№2/Linux_kde.png)
+
+Comparison of GNOME and Plasma features 

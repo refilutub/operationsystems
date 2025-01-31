@@ -267,7 +267,6 @@ The GNU GPL ensures that software remains open-source and free by requiring that
 
 
 # Висновки
->
 >[!IMPORTANT]
 >
 

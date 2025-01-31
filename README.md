@@ -80,3 +80,7 @@
 2. Install the GNU/Linux operating system in a minimal configuration with terminal I/O without a graphical user interface.
  
 ![Terminal](https://github.com/refilutub/operationsystems/blob/СРС_WORK-CASE-№2/Linux_terminal.png)
+
+3.Install the GNOME graphical shell on top of the OS installed in the previous step
+
+![GNOME](https://github.com/refilutub/operationsystems/blob/СРС_WORK-CASE-№2/Linux_gnome.png)

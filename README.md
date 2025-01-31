@@ -69,3 +69,6 @@
 5. The drive will now appear in the VM and can be used like an external device.
 
 ---
+
+>[!IMPORTANT]
+> this part made by Oleksandr Didusenko

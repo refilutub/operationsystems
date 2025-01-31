@@ -267,7 +267,9 @@ The GNU GPL ensures that software remains open-source and free by requiring that
 
 
 # Висновки
+>
 >[!IMPORTANT]
+>
 
 In the course of the laboratory work, we got acquainted with the peculiarities of working in the environment of virtual machines and the Linux operating system. We studied the basic principles of hypervisors, the difference between their types, and the capabilities of Oracle VirtualBox to create and manage virtual machines.  
 

@@ -147,7 +147,7 @@ Oracle **VirtualBox** is a Type 2 hypervisor with the following key components a
 ---
 2. Дайте відповіді на наступні питання. 
 
->[!IMPORTANT]
+>[!IMPORTANT] This part made by Oleksandr Didusenko
 
  1.1. Open VirtualBox and click "New"
 
@@ -157,12 +157,12 @@ Oracle **VirtualBox** is a Type 2 hypervisor with the following key components a
 
  1.4. Start the virtual machine.Follow the OS installation steps, selecting disk partitions and configurations.Complete the installation and restart.
 
- 2. The GNU General Public License (GNU GPL) is a widely used free software license created by the Free Software Foundation (FSF). Its main concept is to ensure that software remains free (as in freedom, not necessarily price) and can be freely used, modified, and distributed by anyone.  
+2. The GNU General Public License (GNU GPL) is a widely used free software license created by the Free Software Foundation (FSF). Its main concept is to ensure that software remains free (as in freedom, not necessarily price) and can be freely used, modified, and distributed by anyone.  
 Main Concept:
 The GNU GPL ensures that software remains open-source and free by requiring that any modified versions must also be open-source and licensed under GPL. This prevents companies from turning open-source projects into proprietary software.  
- 3. The essence of open-source software is freedom and collaboration. It allows anyone to view, modify, and distribute the source code, promoting transparency, innovation, and community-driven development.
+3. The essence of open-source software is freedom and collaboration. It allows anyone to view, modify, and distribute the source code, promoting transparency, innovation, and community-driven development.
 
- 4. A distribution kit (or software distribution) is a packaged version of software that includes all necessary files, libraries, and installation scripts needed to install and run the program on a specific system.
+4. A distribution kit (or software distribution) is a packaged version of software that includes all necessary files, libraries, and installation scripts needed to install and run the program on a specific system.
       
  5.1. User and Access Management
   - Creating, modifying, and deleting users/groups (`useradd`, `usermod`, `passwd`, `groupadd`)
@@ -268,4 +268,11 @@ The GNU GPL ensures that software remains open-source and free by requiring that
 
 # Висновки
 >[!IMPORTANT]
-> 1
+
+In the course of the laboratory work, we got acquainted with the peculiarities of working in the environment of virtual machines and the Linux operating system. We studied the basic principles of hypervisors, the difference between their types, and the capabilities of Oracle VirtualBox to create and manage virtual machines.  
+
+We learned how to install and configure Linux in a virtual environment, explored its graphical interface and command line. We also reviewed the basic commands for managing files, users, and processes, which is essential for effective work in Linux.  
+
+In addition, we learned the basics of network administration, access configuration, file system management, and system health monitoring. The relationship between Linux and Android was discussed, as well as the specifics of using embedded Linux in various fields.  
+
+As a result, we have gained practical skills in using Linux in a virtual environment, which is an important step in the study of operating systems and system administration.

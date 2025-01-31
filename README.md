@@ -147,8 +147,8 @@ Oracle **VirtualBox** is a Type 2 hypervisor with the following key components a
 ---
 2. Дайте відповіді на наступні питання. 
 
->[!IMPORTANT] This part made by Oleksandr Didusenko
->...
+>[!IMPORTANT] 
+>This part made by Oleksandr Didusenko
 
  1.1. Open VirtualBox and click "New"
 

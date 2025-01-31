@@ -148,7 +148,7 @@ Oracle **VirtualBox** is a Type 2 hypervisor with the following key components a
 2. Дайте відповіді на наступні питання. 
 
 >[!IMPORTANT] 
->This part made by Oleksandr Didusenko
+>![made-by-didusenko-oleksandr](https://github.com/user-attachments/assets/5659ba1e-9a2b-4c70-a617-173d94c180d0)
 
  1.1. Open VirtualBox and click "New"
 
@@ -269,7 +269,8 @@ The GNU GPL ensures that software remains open-source and free by requiring that
 
 # Висновки
 >[!IMPORTANT]
->...
+>![made-by-didusenko-oleksandr](https://github.com/user-attachments/assets/5659ba1e-9a2b-4c70-a617-173d94c180d0)
+
 
 In the course of the laboratory work, we got acquainted with the peculiarities of working in the environment of virtual machines and the Linux operating system. We studied the basic principles of hypervisors, the difference between their types, and the capabilities of Oracle VirtualBox to create and manage virtual machines.  
 

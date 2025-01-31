@@ -90,3 +90,18 @@
 ![KDE](https://github.com/refilutub/operationsystems/blob/СРС_WORK-CASE-№2/Linux_kde.png)
 
 Comparison of GNOME and Plasma features 
+
+# GNOME vs. KDE Plasma: Feature Comparison
+
+| Feature           | GNOME                                      | KDE Plasma                                     |
+|------------------|-------------------------------------------|----------------------------------------------|
+| **UI Design**    | Minimalist, modern, and simple            | Traditional desktop, highly customizable    |
+| **Customization**| Limited (extensions needed)               | Extensive, everything is customizable       |
+| **Performance**  | Heavier on resources                      | More lightweight and optimized              |
+| **Settings**     | Simple and clean                          | Advanced, many settings available           |
+| **Default Apps** | Nautilus, Evince, GNOME Terminal          | Dolphin, Okular, Konsole                    |
+| **Extensions**   | Requires GNOME Extensions                 | Built-in Plasmoids (widgets)                |
+| **Theming**      | Limited theming via GNOME Tweaks          | Full theming control with custom UI         |
+| **Wayland Support** | Strong, well-optimized               | Improving, but still some issues            |
+| **Updates**      | Stable but sometimes introduces big changes | Frequent updates with a traditional UI      |
+| **Best For**     | Simple, distraction-free experience       | Power users, customization lovers           |

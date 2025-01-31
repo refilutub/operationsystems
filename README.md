@@ -76,3 +76,6 @@
 1.Install the GNU/Linux operating system (any distribution you like) in your hypervisor in a basic configuration with a graphical shell.
 
 ![Ubuntu](https://github.com/refilutub/operationsystems/blob/СРС_WORK-CASE-№2/linux.png)
+
+2. Install the GNU/Linux operating system in a minimal configuration with terminal I/O without a graphical user interface.
+ 

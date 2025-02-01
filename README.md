@@ -261,6 +261,8 @@ These tools help keep system performance stable and allow easy management of run
    ```
    top
    ```
+![top-command](assets/top.png)
+   
    This will display a dynamic, real-time list of processes. The most active processes typically consume the most CPU and memory resources. Look for processes with high `%CPU` and `%MEM` values, as these are the ones consuming the most resources. For example, a process like a web server or a database server might be highly active, using significant CPU and memory.
    
 
@@ -270,8 +272,8 @@ These tools help keep system performance stable and allow easy management of run
    <kbd>Ctrl + C</kbd>
    This will terminate the `top` command and return you to the shell prompt.
 
-4. **вивести інформацію про процеси за допомогою команди ps;**
-
+4. **Вивести інформацію про процеси за допомогою команди ps**
+  ![top-command](assets/ps.png)
    To view a snapshot of current processes, use:
    ```
    ps

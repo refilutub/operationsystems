@@ -20,7 +20,7 @@
 
 #### **СРС_WORK-CASE**
 - [x] [СРС_WORK-CASE 1](https://github.com/refilutub/operationsystems/tree/%D0%A1%D0%A0%D0%A1_WORK-CASE-%E2%84%961)
-- [x] [СРС_WORK-CASE 2](https://github.com/refilutub/operationsystems/tree/SRC_WORK-CASE-2)
+- [x] [СРС_WORK-CASE 2](https://github.com/refilutub/operationsystems/tree/%D0%A1%D0%A0%D0%A1_WORK-CASE-%E2%84%962)
 - [ ] [СРС_WORK-CASE 3](https://github.com/refilutub/operationsystems/tree/SRC_WORK-CASE-3)
 - [ ] [СРС_WORK-CASE 4](https://github.com/refilutub/operationsystems/tree/SRC_WORK-CASE-4)
 - [ ] [СРС_WORK-CASE 5](https://github.com/refilutub/operationsystems/tree/SRC_WORK-CASE-5)
@@ -29,7 +29,7 @@
 - [ ] [СРС_WORK-CASE 8](https://github.com/refilutub/operationsystems/tree/SRC_WORK-CASE-8)
 
 #### **Лабораторні роботи**
-- [x] [Лабораторна робота 1](https://github.com/refilutub/operationsystems/tree/Lab-1)
+- [x] [Лабораторна робота 1](https://github.com/refilutub/operationsystems/tree/%D0%9B%D0%B0%D0%B1%D0%BE%D1%80%D0%B0%D1%82%D0%BE%D1%80%D0%BD%D0%B0-%D1%80%D0%BE%D0%B1%D0%BE%D1%82%D0%B0-%E2%84%961-(%D0%B7%D0%B2%D1%96%D1%82))
 - [ ] [Лабораторна робота 2](https://github.com/refilutub/operationsystems/tree/Lab-2)
 - [ ] [Лабораторна робота 3](https://github.com/refilutub/operationsystems/tree/Lab-3)
 - [ ] [Лабораторна робота 4](https://github.com/refilutub/operationsystems/tree/Lab-4)

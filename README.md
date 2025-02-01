@@ -12,11 +12,11 @@
 
 
 ### **ЗВІТ ПО ВИКОНАННЮ** 
-### **ЛАБОРАТОРНОЇ РОБОТИ №2**  
+### **ЛАБОРАТОРНОЇ РОБОТИ №4**  
 ### *з дисципліни: «Операційні системи»*  
 
   
-### **Тема:** *«Ознайомлення з робочим середовищем віртуальних машин та операційних систем різних сімейств»*  
+### **Тема:** *«Команди Linux для управління процесами»*  
 
 <br/>
 
@@ -46,9 +46,8 @@
 
 
 ## Мета роботи:  
-1. Знайомство з базовими командами CLI-режиму в Linux.
-2. Знайомство з базовими текстовими командами в термінальному режимі роботи в різних ОС.
-
+1. Отримання практичних навиків роботи з командною оболонкою Bash.
+2. Знайомство з базовими командами для управління процесами.
 
 ---
 
@@ -65,83 +64,108 @@
 >[!IMPORTANT]
 >![made-by-borsuk-maksym](https://github.com/user-attachments/assets/68d0a6b6-134b-4446-a841-61b9dc7c958b)
 
-### 1. Прочитайте короткі теоретичні відомості до лабораторної роботи та зробіть невеликий словник базових англійських термінів з питань призначення команд та їх параметрів.
-| Англійською              | Українською                                                   |
-|--------------------------|---------------------------------------------------------------|
-| Command Line Interface (CLI) | Інтерфейс командного рядка                                    |
-| The Shell                | Оболонка (Командний інтерпретатор)                            |
-| Command                  | Команда                                                       |
-| Option                   | Опція                                                         |
-| Argument                 | Аргумент                                                      |
-| Command History          | Історія команд                                                |
-| Inline Editing           | Вбудоване редагування                                          |
-| Scripting                | Скриптування                                                   |
-| Alias                    | Псевдонім (коротке ім'я для довших команд)                    |
-| Variable                 | Змінна                                                        |
-| Prompt                   | Підказка (Запрошення до введення команди)                     |
-| Internal Command         | Вбудована команда                                             |
-| External Command         | Зовнішня команда                                              |
-| Function                 | Функція                                                       |
-| Quotation Marks          | Кавычки                                                       |
-| Control Statement        | Контрольна інструкція                                         |
-| Semicolon (;)            | Точка з комою                                                 |
-| Double Ampersand (&&)    | Подвійний амперсанд (логічне "І")                              |
-| Double Pipe (||)         | Подвійний пайп (логічне "АБО")                                 |
+# Словник термінів для роботи з командами та параметрами
 
-### 4. Терміни:
+| Англійський термін       | Український переклад / Опис                                                                 |
+|--------------------------|--------------------------------------------------------------------------------------------|
+| **Process**              | Програма, яка виконується на системі.                                                       |
+| **ps command**           | Утиліта для перегляду інформації про процеси.                                               |
+| **PID**                  | Унікальний номер процесу.                                                                  |
+| **TTY**                  | Пристрій, з якого запущено процес.                                                         |
+| **CPU time**             | Час, витрачений процесом на виконання.                                                     |
+| **Unix-style parameters**| Параметри з дефісом, наприклад, `-e`.                                                       |
+| **BSD-style parameters** | Параметри без дефісу, наприклад, `a`.                                                      |
+| **GNU long parameters**  | Довгі параметри з подвійним дефісом, наприклад, `--help`.                                   |
+| **-A**                   | Показує всі процеси.                                                                        |
+| **-e**                   | Показує всі процеси (аналогічно `-A`).                                                      |
+| **-f**                   | Виводить повну інформацію про процеси.                                                     |
+| **-l**                   | Виводить довгий список інформації про процеси.                                             |
+| **-u userlist**          | Показує процеси, які належать користувачам зі списку `userlist`.                            |
+| **-p pidlist**           | Показує процеси з певними PID зі списку `pidlist`.                                          |
+| **UID**                  | Власник процесу.                                                                            |
+| **PPID**                 | Ідентифікатор батьківського процесу.                                                      |
+| **STIME**                | Час запуску процесу.                                                                        |
+| **CMD**                  | Назва програми, яка запустила процес.                                                     |
+| **F**                    | Прапори системи, призначені ядром для процесу.                                            |
+| **S**                    | Стан процесу (наприклад, R = виконується, S = спить, Z = зомбі).                           |
+| **PRI**                  | Пріоритет процесу (чим вище число, тим нижчий пріоритет).                                  |
+| **NI**                   | Значення "nice" - впливає на пріоритет процесу.                                           |
+| **SZ**                   | Розмір пам'яті, який займає процес.                                                        |
+| **WCHAN**                | Адреса функції ядра, де процес "спить".                                                    |
+| **top command**          | Інструмент для моніторингу процесів у реальному часі.                                      |
+| **Load average**         | Середнє навантаження системи (1, 5, 15 хвилин).                                            |
+| **VIRT**                 | Загальний обсяг пам'яті, який використовує процес.                                          |
+| **RES**                  | Обсяг оперативної пам'яті, який використовує процес.                                       |
+| **SHR**                  | Обсяг пам'яті, який процес ділить з іншими процесами.                                      |
+| **%CPU**                 | Частка процесорного часу, яку використовує процес.                                         |
+| **%MEM**                 | Частка фізичної пам'яті, яку використовує процес.                                          |
+| **TIME+**                | Загальний час CPU, використаний процесом з моменту запуску.                               |
+| **kill command**         | Надсилає сигнали процесам за їх PID.                                                       |
+| **killall command**      | Зупиняє процеси за їх іменами.                                                              |
+| **Signal**               | Повідомлення, яке надсилається процесу для керування його роботою.                         |
+| **HUP (1)**              | Перезавантажує процес.                                                                    |
+| **INT (2)**              | Перериває процес.                                                                           |
+| **KILL (9)**             | Примусово завершує процес.                                                                 |
+| **TERM (15)**            | Просить процес завершитися.                                                               |
+| **STOP (17)**            | Призупиняє виконання процесу.                                                              |
+| **CONT (19)**            | Продовжує виконання призупиненого процесу.                                                 |
 
-1. **Command Interpreter**:  
-   A program that processes and interprets commands entered by the user in a command-line interface (CLI), executing them on the operating system.
+## Answers to the Questions
 
-2. **Shell**:  
-   A user interface that allows interaction with the operating system through command-line instructions. It acts as a command interpreter, translating user commands into actions performed by the system.
+### 2.1. Commands for Monitoring Process Status
+To check what processes are running on a Linux system, the `ps` command is commonly used. It provides details about active processes and allows filtering with different options. Some useful parameters are:
+- `-A`: Show all processes
+- `-e`: Display all running processes
+- `-u userlist`: Filter processes by user
+- `-F`: Show detailed output
+- `-l`: Show extended listing format
+- `-H`: Show processes in a tree format
 
-3. **Command**:  
-   A specific instruction or program executed by the command-line interface (CLI) to perform a particular action, such as listing files, navigating directories, or managing system resources.
+To see all available options, use:
+```sh
+man ps
+```
+or:
+```sh
+ps --help
+```
 
-### 5. Відповіді на питання:
+### 2.2. Real-time Process Monitoring with `ps`
+The `ps` command provides a one-time snapshot of running processes, meaning it does not update in real-time. If you need continuous monitoring, use the `top` command.
 
-1. **What basic information does the prompt line provide?**  
-   The prompt typically provides the following basic information:  
-   - **Username**: The user currently logged into the system.  
-   - **System name**: The name of the system or host.  
-   - **Current Directory**: The directory the user is currently in.  
-   This information helps users quickly identify their environment and the current location in the file system.
+### 2.3. Sorting Processes in `top`
+The `top` command sorts processes dynamically, usually by CPU usage. You can change sorting by pressing:
+- `P`: Sort by CPU usage
+- `M`: Sort by memory usage
+- `T`: Sort by total CPU time used
+- `N`: Sort by process ID (PID)
+- `f`: Customize displayed fields and sorting
 
-2. **Why does a command need parameters and arguments?**  
-   - **Parameters** modify the behavior of the command, allowing for more specific functionality (e.g., display output in a different format).  
-   - **Arguments** provide necessary additional information that the command acts upon (e.g., filenames, directory names, or other input data).
+To change the update interval, press `d`. To exit `top`, press `q`.
 
-3. **What is the purpose of the `ls` command, and what parameters and arguments can it have? Provide 3 examples.**  
-   The `ls` command is used to list the contents of a directory.  
-   - **Parameters** modify the output format (e.g., `-l` for a long listing).  
-   - **Arguments** specify the directories or files to list.  
-   
-   Examples:  
-   - `ls` – Lists contents of the current directory.  
-   - `ls -l` – Provides a detailed listing of files (permissions, ownership, size, etc.).  
-   - `ls /home/user` – Lists the contents of the `/home/user` directory.
+### 2.4. Commands for Stopping Processes
+If a process becomes unresponsive or consumes too many resources, you can stop it using these commands:
 
-4. **How can you use the command history, and what advantages does it provide?**  
-   The command history allows users to access previously entered commands using the arrow keys or the `history` command. This saves time by avoiding the need to retype long or complex commands, improving workflow efficiency.
+1. **kill**: Stop a process using its PID.
+   ```sh
+   kill 3940  # Sends a request to terminate the process
+   kill -9 3940  # Forces termination
+   ```
+2. **killall**: Stop all instances of a process by name.
+   ```sh
+   killall firefox  # Kills all Firefox processes
+   killall -9 chrome  # Forcefully stops all Chrome processes
+   ```
+3. **pkill**: Kill processes based on name or pattern.
+   ```sh
+   pkill -f apache  # Stops any process matching "apache"
+   ```
+4. **htop**: An interactive tool to manage processes.
+   - Use arrow keys to select a process
+   - Press `F9`, then choose a termination signal
 
-5. **What is the purpose of the `echo` command?**  
-   The `echo` command is used to display a line of text or variable content in the terminal. It is commonly used for printing output, debugging, or setting values in scripts.
+These tools help keep system performance stable and allow easy management of running applications.
 
-6. **What is a variable in the Bash shell, and what types of variables does it support?**  
-   A variable is a container that stores data that can be used within commands or scripts. There are two types of variables in Bash:  
-   - **Local variables**: Defined within a script or function, only accessible in the scope where they are defined.  
-   - **Environment variables**: Available to all programs and processes in the system.
-
-7. **What is the purpose of the `env`, `export`, and `unset` commands?**  
-   - `env` – Displays the current environment variables.  
-   - `export` – Sets environment variables, making them available to child processes.  
-   - `unset` – Removes a variable or function.
-
-8. **Which commands can be used to get help about commands in the terminal?**  
-   - `man <command>` – Displays the manual page for the specified command.  
-   - `info <command>` – Displays detailed information about the command.  
-   - `--help` – A common option for most commands that provides a quick reference about their usage (e.g., `ls --help`).
 
 
 
@@ -149,101 +173,172 @@
 
 ## Хід роботи  
 >[!IMPORTANT]
->
+>![made-by-borsuk-maksym](https://github.com/user-attachments/assets/68d0a6b6-134b-4446-a841-61b9dc7c958b)
 
-## 1. Опрацюйте всі приклади команд, що представлені у лабораторній роботі курсу NDG Linux Essentials - Lab 5: Command Line Skills та Lab 6: Getting Help. Створіть таблицю для опису цих команд
-| **Command**        | **Purpose and Functionality**                                                                 |
-|--------------------|---------------------------------------------------------------------------------------------|
-| `ls`               | Lists files and directories in the current working directory.                               |
-| `ls -l`            | Lists files and directories in long format, displaying additional file information.         |
-| `ls -l /home`      | Lists files and directories in long format in the specified directory.                      |
-| `whoami`           | Displays the current user’s username.                                                       |
-| `uname`            | Displays basic information about the system (e.g., kernel name).                            |
-| `uname -n`         | Displays the network node hostname.                                                         |
-| `uname --nodename` | Displays the network node hostname (same as `-n` option).                                   |
-| `pwd`              | Prints the current working directory.                                                       |
-| `history`          | Displays the list of recently executed commands.                                            |
-| `history 5`        | Displays the last 5 commands from the history list.                                          |
-| `!9`               | Executes the command listed at position 9 in the history list.                              |
-| `echo`             | Prints text or the value of variables to the terminal.                                      |
-| `echo $PATH`       | Displays the value of the PATH environment variable.                                        |
-| `which`            | Shows the full path of an executable program.                                               |
-| `type`             | Displays information about a command's type (e.g., internal or external).                  |
-| `which ls`         | Shows the path to the `ls` command.                                                         |
-| `type -a ls`       | Displays all locations of the `ls` command, including any aliases.                         |
-| `alias`            | Displays all aliases currently set in the shell.                                            |
-| `cd`               | Changes the current directory.                                                              |
-| `type vi`          | Displays information about the command `vi`.                                               |
-| `cd /bin`          | Changes the current directory to `/bin`.                                                    |
-| `cd`               | Returns to the home directory.                                                              |
-| `echo 'Hello'`     | Prints the text 'Hello', using single quotes to prevent shell expansion.                   |
-| `echo "Hello"`     | Prints the text 'Hello', using double quotes for possible variable expansion.               |
-| `echo \*`          | Prints the literal asterisk `*`, escaping its special meaning.                              |
-| `type vlc`         | Displays information about the command `vlc`.                                               |
-| `type cp`          | Shows the type of the `cp` command (usually external).                                      |
-| `date`                      | Displays the current date and time.                                                  |
-| `man`                       | Opens the manual page for a given command, providing details on how to use it. Example: `man date` opens the manual for the `date` command. |
-| `less`                      | A pager program used to view the output of `man` and other commands. You can navigate through it using various keys like space, arrow keys, etc. |
-| `h`                         | Shows the help for navigation within the `less` command.                              |
-| `q`                         | Exits the `less` pager and returns to the terminal prompt.                           |
-| `Spacebar`, `f`, `PageDown` | Scrolls forward one page in the `less` viewer.                                       |
-| `b`, `PageUp`               | Scrolls backward one page in the `less` viewer.                                      |
-| `Enter`, `down arrow`       | Moves down one line in the `less` viewer.                                            |
-| `Up arrow`                  | Moves up one line in the `less` viewer.                                              |
-| `/ followed by text`        | Starts a forward search within the `less` viewer. For example, `/file` searches for the word "file". |
-| `? followed by text`        | Starts a backward search within the `less` viewer.                                   |
-| `n`                         | Moves to the next match of the search term in `less`.                                |
-| `N`                         | Moves to the previous match of the search term in `less`.                            |
-| `man -k`                    | Searches for all `man` pages that match a specific keyword. Example: `man -k password` shows `man` pages related to "password". |
-| `apropos`                   | Another command to search for `man` page summaries based on a keyword. Example: `apropos password`. |
-| `man -f`                    | Displays the sections for a given command, showing all `man` pages for a command or keyword. Example: `man -f passwd` lists all the `man` pages for "passwd". |
-| `whatis`                    | Displays a short description of a command. Example: `whatis passwd` shows a summary of the `passwd` command. |
-| `info`                      | Displays info pages, which are more detailed than `man` pages. Example: `info date` displays detailed information about the `date` command. |
-| `-r`, `--reference=FILE`    | Used with `date` to display the last modification time of a specified file.         |
-| `-R`, `--rfc-2822`          | Outputs the date and time in RFC 2822 format, often used in email headers.          |
-| `--rfc-3339=TIMESPEC`       | Outputs date and time in RFC 3339 format with a specified level of precision (e.g., seconds or nanoseconds). |
-| `-s`, `--set=STRING`        | Used to set the system date and time to a specified string.                          |
-| `-u`, `--utc`, `--universal`| Prints or sets the Coordinated Universal Time (UTC) instead of the local time zone. |
-| `--help`                    | Displays help information for a command. Example: `date --help`.                     |
+1. **Як вивести вміст директорії /proc? Де вона знаходиться та для чого призначена? Охарактеризуйте інформацію про її вміст?**
 
-## 2. Робота в в терміналі (закріплення практичних навичок) обов'язково представити свої скріншоти:
+   The `/proc` directory is a virtual filesystem located in the root directory (`/`). It provides a mechanism for the kernel to communicate information about the system to user space. The contents of this directory represent runtime system information such as system memory, devices, processes, and kernel parameters. The data in `/proc` is not stored on disk but generated in real-time by the kernel.
 
-<details>
- <summary><h3>Робота зі змінними (Variables) та псевдонімами (Aliases) в терміналі</h3></summary>
- <div>
- <img src="assets/1varname.jpg">
- <img src="assets/1alias.jpg">
- <img src="assets/1cal.jpg">
-</div>
-</details>
+   To view its contents, you can use the `ls` command:
+   ```
+   ls /proc
+   ```
 
-<details>
- <summary><h3>Робота з функціями (Functions) в терміналі</h3></summary>
- <div>
- <img src="assets/2studentsreport.jpg">
-</div>
-</details>
+   Some of the notable entries include:
+   - `/proc/cpuinfo`: Information about the processor.
+   - `/proc/meminfo`: Information about system memory usage.
+   - `/proc/uptime`: The system's uptime and idle time.
+   - `/proc/[pid]`: Directories for each running process, where `[pid]` is the process ID.
 
-<details>
- <summary><h3>Робота з лапками (Quoting) в терміналі.</h3></summary>
- <div>
- <img src="assets/3calendar.jpg">
-</div>
-</details>
+2. **Як вивести інформацію про поточні сеанси користувачів. Якою командою це можна зробити?**
 
-<details>
- <summary><h3>Робота з інструкціями керування (Control Statements) в термінал</h3></summary>
- <div>
- <img src="assets/isit.jpg">
-</div>
-</details>
+   To display information about the current user sessions, you can use the `w` or `who` command. These commands show who is logged in and what they are doing.
+   
+   Example:
+   ```
+   w
+   ```
 
-<details>
- <summary><h3>Робота з командами довідки (Man Pages) в терміналі</h3></summary>
- <div>
- <img src="assets/uname.jpg">
-</div>
-</details>
+   or
+   
+   ```
+   who
+   ```
+
+3. **Які дії можна зробити в терміналі за допомогою комбінацій <kbd>Ctrl + C</kbd>, <kbd>Ctrl + D</kbd> та <kbd>Ctrl + Z</kbd>?**
+
+   - <kbd>**Ctrl + C**</kbd>: Terminates the current running process.
+   - <kbd>**Ctrl + D**</kbd>: Logs out of the current shell or closes the terminal window.
+   - <kbd>**Ctrl + Z**</kbd>: Suspends the currently running process and puts it in the background.
+
+4. **Чим відрізняється фоновий процес від звичайного. Де вони використовуються?**
+
+   A foreground process is one that runs in the terminal and occupies it until it finishes. You interact with it directly. A background process, on the other hand, runs without occupying the terminal, allowing you to continue using the terminal for other tasks. Background processes are often used for long-running tasks that don’t require user interaction.
+
+   You can move a process to the background by appending `&` when running a command or by suspending it with <kbd>Ctrl + Z</kbd> and then using the `bg` command.
+
+5. **Опишіть наступні команди та поясніть що вони виконують – команда jobs, bg, fg.**
+
+   - **jobs**: Displays the list of jobs running in the background, along with their job IDs and statuses.
+     ```
+     jobs
+     ```
+
+   - **bg**: Resumes a suspended job in the background, allowing it to continue running while the terminal is free for other tasks.
+     ```
+     bg %1  # %1 is the job ID
+     ```
+
+   - **fg**: Brings a background job into the foreground, making it the active process in the terminal.
+     ```
+     fg %1  # %1 is the job ID
+     ```
+
+6. **Якою командою можна переглянути інформацію про запущені в системи фонові процеси та задачі?**
+
+   The `ps` command can be used to view information about running background processes and tasks in the system. You can combine it with the `aux` option for detailed information.
+
+   Example:
+   ```
+   ps aux
+   ```
+
+7. **Як призупинити фоновий процес, як його потім відновити та при необхідності перезапусти?**
+
+   - To suspend a background process, use <kbd>Ctrl + Z</kbd> or the `kill -STOP <pid>` command, where `<pid>` is the process ID.
+   - To resume it in the background, use the `bg` command with the job ID or PID.
+   - To restart a process, you can stop it and then run the command again in the background or foreground.
+     ```
+     kill -STOP <pid>  
+     bg %1             
+     kill -CONT <pid>  
+     ```
+
+
+1. **Run the `top` command, analyze the results, and describe the most active processes in the system:**
+
+   To run the `top` command, simply type:
+   ```
+   top
+   ```
+   This will display a dynamic, real-time list of processes. The most active processes typically consume the most CPU and memory resources. Look for processes with high `%CPU` and `%MEM` values, as these are the ones consuming the most resources. For example, a process like a web server or a database server might be highly active, using significant CPU and memory.
+
+2. **Pause the `top` command execution (you need to use a key combination):**
+
+   To stop the execution of `top`, press
+   <kbd>Ctrl + C</kbd>
+   This will terminate the `top` command and return you to the shell prompt.
+
+3. **Display information about processes using the `ps` command:**
+
+   To view a snapshot of current processes, use:
+   ```
+   ps
+   ```
+   This will display a list of processes running in your session, showing their PID (Process ID), TTY (terminal type), and command that started them.
+
+4. **Provide 5 examples of using different parameters with the `ps` command and explain what they do:**
+
+   - **`ps aux`**: Shows all processes running on the system, along with detailed information like CPU and memory usage, user, and more.
+     ```
+     ps aux
+     ```
+   
+   - **`ps -u <username>`**: Displays processes running by a specific user.
+     ```
+     ps -u username
+     ```
+   
+   - **`ps -e`**: Displays all running processes on the system, similar to `ps aux`, but with less detail.
+     ```
+     ps -e
+     ```
+   
+   - **`ps -f`**: Shows processes in a full-format listing, providing additional details like the parent process ID (PPID).
+     ```
+     ps -f
+     ```
+   
+   - **`ps --forest`**: Displays processes in a tree-like structure to visualize parent-child relationships between processes.
+     ```
+     ps --forest
+     ```
+
+5. **Check if you have any background processes running, and identify which ones:**
+
+   To check for background processes, use the `jobs` command:
+   ```
+   jobs
+   ```
+   This will list the background jobs in your current terminal session, showing their job ID and status.
+
+6. **Resume a suspended background process in the foreground, then suspend it again, and finally resume it in the background:**
+
+   - To bring a background process to the foreground, use:
+     ```bash
+     fg %1
+     ```
+
+   - To suspend a process running in the foreground, press:
+     <kbd>Ctrl + Z</kbd>
+     
+
+   - To move the suspended process back to the background, use:
+     ```
+     bg %1
+     ```
+
+7. **Terminate the background process:**
+
+   To kill the background process, use:
+   ```
+   kill %1
+   ```
+   Or, if you know the process ID, you can also use:
+   ```
+   kill <pid>
+   ```
+   This will terminate the specified process.
 
 ---
 

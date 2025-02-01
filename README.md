@@ -255,21 +255,22 @@ These tools help keep system performance stable and allow easy management of run
      ```
 
 
-1. **Run the `top` command, analyze the results, and describe the most active processes in the system:**
+1. **запустіть команду top, проаналізуйте отриманий в цій команді результат та охарактеризуйте найбільш активні процеси у системі**
 
    To run the `top` command, simply type:
    ```
    top
    ```
    This will display a dynamic, real-time list of processes. The most active processes typically consume the most CPU and memory resources. Look for processes with high `%CPU` and `%MEM` values, as these are the ones consuming the most resources. For example, a process like a web server or a database server might be highly active, using significant CPU and memory.
+   
 
-2. **Pause the `top` command execution (you need to use a key combination):**
+3. **Призупинити виконання команди top (треба використати комбінацію клавіш)**
 
    To stop the execution of `top`, press
    <kbd>Ctrl + C</kbd>
    This will terminate the `top` command and return you to the shell prompt.
 
-3. **Display information about processes using the `ps` command:**
+4. **вивести інформацію про процеси за допомогою команди ps;**
 
    To view a snapshot of current processes, use:
    ```
@@ -277,7 +278,7 @@ These tools help keep system performance stable and allow easy management of run
    ```
    This will display a list of processes running in your session, showing their PID (Process ID), TTY (terminal type), and command that started them.
 
-4. **Provide 5 examples of using different parameters with the `ps` command and explain what they do:**
+5. **наведіть 5 прикладів з використанням різних параметрів команди ps (наприклад, вивести тільки системні процеси, вивести процеси конкретного користувача, вивести дерево процесів тощо). Опишіть, що саме роблять обрані Вами параметри**
 
    - **`ps aux`**: Shows all processes running on the system, along with detailed information like CPU and memory usage, user, and more.
      ```
@@ -304,7 +305,7 @@ These tools help keep system performance stable and allow easy management of run
      ps --forest
      ```
 
-5. **Check if you have any background processes running, and identify which ones:**
+6. **Передивіться чи є у Вас запущені фонові процеси, які саме?**
 
    To check for background processes, use the `jobs` command:
    ```
@@ -312,10 +313,10 @@ These tools help keep system performance stable and allow easy management of run
    ```
    This will list the background jobs in your current terminal session, showing their job ID and status.
 
-6. **Resume a suspended background process in the foreground, then suspend it again, and finally resume it in the background:**
+7. **Відновити виконання призупиненого фонового процесу спочатку у позиції “на передньому плані” (foreground), потім ще раз його призупинити, а потім відновити його виконання у позиції “на задньому плані” (background)**
 
    - To bring a background process to the foreground, use:
-     ```bash
+     ```
      fg %1
      ```
 
@@ -328,7 +329,7 @@ These tools help keep system performance stable and allow easy management of run
      bg %1
      ```
 
-7. **Terminate the background process:**
+8. **Завершити роботу даного фонового процесу.**
 
    To kill the background process, use:
    ```

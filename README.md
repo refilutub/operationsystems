@@ -29,7 +29,7 @@
 - [ ] [СРС_WORK-CASE 8](https://github.com/refilutub/operationsystems/tree/SRC_WORK-CASE-8)
 
 #### **Лабораторні роботи**
-- [ ] [Лабораторна робота 1](https://github.com/refilutub/operationsystems/tree/Lab-1)
+- [x] [Лабораторна робота 1](https://github.com/refilutub/operationsystems/tree/Lab-1)
 - [ ] [Лабораторна робота 2](https://github.com/refilutub/operationsystems/tree/Lab-2)
 - [ ] [Лабораторна робота 3](https://github.com/refilutub/operationsystems/tree/Lab-3)
 - [ ] [Лабораторна робота 4](https://github.com/refilutub/operationsystems/tree/Lab-4)

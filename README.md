@@ -114,50 +114,71 @@ Oracle **VirtualBox** is a Type 2 hypervisor with the following key components a
 
 # Хід роботи
 
->[!IMPORTANT]
->![made-by-borsuk-maksym](https://github.com/user-attachments/assets/68d0a6b6-134b-4446-a841-61b9dc7c958b)
-
-1. **Linux - Кращі дистрибутиви 2023**  
-   [Переглянути відео](https://youtu.be/PahmJBU9HKA?si=maxRf0nZlqs2hFGU)
-
-2. **ТОП 5 ПРИЧИН ЧОМУ АЙТІШНИКУ ВАРТО ПЕРЕЙТИ НА ЛІНУКС**  
-   [Переглянути відео](https://youtu.be/bP3_mZKezvM?si=sM3Mpc9JQ_0bY9Yd)
-
-3. **Як встановити Linux разом з Windows спосіб #1 Microsoft Store**  
-   [Переглянути відео](https://youtu.be/eEdGl6HvSdM?si=WDbwa71i034D2rQj)
-
-4. **Як встановити Linux разом з Windows спосіб #2 Dual Boot**  
-   [Переглянути відео](https://youtu.be/Hfky8TEyXss?si=ilduY167LS-vKl9y)
-
-5. **Як встановлювати програми на Linux. Linux українською #1**  
-   [Переглянути відео](https://youtu.be/M8XHJME6cxI?si=L0Koom59jTRnPXnU)
-
-6. **Як зробити панель завдань Linux як у Windows. Linux українською #2**  
-   [Переглянути відео](https://youtu.be/9szAz-A4gaM?si=LxaVueluI3tKRb1r)
-
-7. **Як встановити Ubuntu на VirtualBox**  
-   [Переглянути відео](https://youtu.be/ADOaHm1VZII?si=hG5kDRsajFn7se8d)
-
-8. **The Shell (Linux)**  
-   [Переглянути матеріал](https://drive.google.com/open?id=0B0PV0_SM0LoDSVNPWUVRdUxaN2s)
-
-9. **Linux Desktop Environments: XFCE vs GNOME vs KDE**  
-   [Переглянути відео](https://youtu.be/2JBGQfPR5xQ?si=euswD7IHrODd-6JH)
-
----
-2. Дайте відповіді на наступні питання. 
-
 >[!IMPORTANT] 
 >![made-by-didusenko-oleksandr](https://github.com/user-attachments/assets/5659ba1e-9a2b-4c70-a617-173d94c180d0)
 
+---
+2.  Дайте відповіді на наступні питання. 
  1.1. Open VirtualBox and click "New"
 
  1.2. Enter a name and select the operating system type and version.
  
  1.3. Allocate RAM and create virtual hard disk
 
- 1.4. Start the virtual machine.Follow the OS installation steps, selecting disk partitions and configurations.Complete the installation and restart.
+ 1.4. Start the virtual machine.Follow the OS installation steps, selecting disk partitions and configurations.Complete the installation and restart.  
+ 
+ 2. # Hardware Limitations for Installing 32-bit and 64-bit Operating Systems
 
+## 1. CPU Architecture
+- **32-bit CPUs** can only run **32-bit operating systems**.
+- **64-bit CPUs** can run both **32-bit and 64-bit operating systems**.
+- If your processor is **x86 (32-bit only)**, you are limited to a 32-bit OS.
+- If your processor is **x86-64 (AMD64, Intel64)**, you can install a 64-bit OS.
+
+## 2. Virtualization Support
+- Many **64-bit OSes** (especially in virtual machines like VirtualBox) require **hardware virtualization** (VT-x for Intel, AMD-V for AMD).
+- If your CPU does not support VT-x/AMD-V or it is disabled in BIOS/UEFI, you might not be able to install a **64-bit OS in a virtual machine**.
+
+## 3. RAM (Memory) Limitations
+- **32-bit operating systems** can use a maximum of **4GB of RAM** (realistically around **3.2 - 3.5GB** due to hardware and OS limitations).
+- **64-bit operating systems** can utilize more than **4GB of RAM** (e.g., Windows 10 x64 supports up to **2TB of RAM** in server editions).
+
+## 4. Driver Compatibility
+- **32-bit OS** requires **32-bit drivers**.
+- **64-bit OS** requires **64-bit drivers**, which may not be available for very old hardware.
+
+## 5. BIOS vs. UEFI Boot Mode
+- Some modern **64-bit operating systems** (e.g., Windows 11 x64) require **UEFI boot mode**.
+- Older computers with **BIOS-only firmware** may not support newer 64-bit OS versions.
+
+## 6. File System Requirements
+- **32-bit Windows** supports **FAT32** and **NTFS**.
+- **64-bit Windows** requires **NTFS** for installation.
+
+## Conclusion
+- If you have a **64-bit processor and more than 4GB of RAM**, a **64-bit OS** is the best choice.
+- If your hardware is **older (less than 4GB RAM, 32-bit CPU)**, a **32-bit OS** is necessary.
+- For **virtual machines**, ensure that **VT-x/AMD-V is enabled** in BIOS to run a 64-bit OS.
+
+Do you have a specific system in mind? I can help determine the best OS choice for it! 🚀
+
+
+### Відповіді на контрольні запитання
+1.Hypervisors are software or firmware that allow multiple virtual machines (VMs) to run on a single physical machine. They are categorized into Type 1 (bare-metal) and Type 2 (hosted) hypervisors.  
+| Feature            | Type 1 Hypervisor (Bare-Metal) | Type 2 Hypervisor (Hosted) |
+|--------------------|--------------------------------|----------------------------|
+| **Architecture**   | Runs directly on the physical hardware without an underlying OS. | Runs on top of an existing operating system. |
+| **Performance**    | High performance due to direct hardware access. | Slightly lower performance due to OS overhead. |
+| **Security**       | More secure since it minimizes attack surfaces by eliminating the host OS. | Less secure as it relies on the security of the host OS. |
+| **Resource Efficiency** | More efficient in managing system resources. | Less efficient due to additional OS layer. |
+| **Use Case**       | Enterprise data centers, cloud computing, virtualization in production environments. | Personal use, software testing, and small-scale virtualization. |
+| **Examples**       | VMware ESXi, Microsoft Hyper-V, KVM, Xen. | VMware Workstation, Oracle VirtualBox, Parallels Desktop. |
+| **Scalability**    | Highly scalable, supporting multiple VMs on powerful hardware. | Limited scalability due to host OS constraints. |
+| **Ease of Use**    | Requires specialized knowledge to set up and manage. | Easier to install and use, similar to regular applications. |
+
+Scope of Application
+   - Type 1 Hypervisors are used in enterprise and cloud environments where performance, security, and scalability are critical (e.g., data centers, cloud platforms like AWS, Azure, Google Cloud).
+   - Type 2 Hypervisors are mainly used for development, testing, and running multiple OS environments on personal computers.
 2. The GNU General Public License (GNU GPL) is a widely used free software license created by the Free Software Foundation (FSF). Its main concept is to ensure that software remains free (as in freedom, not necessarily price) and can be freely used, modified, and distributed by anyone.  
 Main Concept:
 The GNU GPL ensures that software remains open-source and free by requiring that any modified versions must also be open-source and licensed under GPL. This prevents companies from turning open-source projects into proprietary software.  
@@ -220,10 +241,6 @@ The GNU GPL ensures that software remains open-source and free by requiring that
  **Difference Between CLI and GUI Modes:**
   - CLI (Command-Line Interface) – Mode with no graphical environment. Users interact via a terminal and commands. It's lightweight and often used in servers, embedded systems, and for administrative tasks.
   - GUI (Graphical User Interface) – Mode with a graphical environment like GNOME or KDE. Users interact with windows, icons, and menus, offering a more user-friendly experience, suitable for desktop usage.
-
-
-
-### Відповіді на контрольні запитання
 
 >[!IMPORTANT]
 >![made-by-borsuk-maksym](https://github.com/user-attachments/assets/68d0a6b6-134b-4446-a841-61b9dc7c958b)

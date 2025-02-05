@@ -292,6 +292,7 @@ Yes, it's possible to log in multiple times under the same username. This allows
 ---
 
 >[!IMPORTANT]
-> 1
+> This part made by Didusenko Oleksandr
 
 ## Висновки  
+Ми успішно ознайомилися з принципами роботи віртуальних машин та особливостями різних операційних систем.Набули практичних навичок встановлення та налаштування віртуальних середовищ, а також базових команд в середовищі Linux.

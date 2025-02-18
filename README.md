@@ -149,7 +149,7 @@
 
 ## Хід роботи  
 >[!IMPORTANT]
->
+>![made-by-borsuk-maksym](https://github.com/user-attachments/assets/68d0a6b6-134b-4446-a841-61b9dc7c958b)
 
 ## 1. Опрацюйте всі приклади команд, що представлені у лабораторній роботі курсу NDG Linux Essentials - Lab 5: Command Line Skills та Lab 6: Getting Help. Створіть таблицю для опису цих команд
 | **Command**        | **Purpose and Functionality**                                                                 |
@@ -249,7 +249,7 @@
 
 ### Відповіді на контрольні запитання  
 >[!IMPORTANT]
-> 1
+> 
 
 ---
 

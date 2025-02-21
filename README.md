@@ -481,6 +481,8 @@ Both commands are used to find files, but they work differently:
 
 >[!IMPORTANT]
 > Made by Didusenko Oleksandr
+
+
 In the course of the lab, we learned the basics of working at the command line of operating systems of various families, including Linux. We examined the basic CLI commands, their parameters and arguments, as well as the features of working with the terminal.
 
 We created a glossary of basic English terms related to the command line and reviewed key commands for navigating the file system, viewing help information, and using command history.

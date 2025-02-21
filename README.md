@@ -249,8 +249,7 @@
 
 ### Відповіді на контрольні запитання  
 >[!IMPORTANT]
-> 
-
+>Made by Didusenko Oleksandr
 ## 1.1 Built-in Commands:
 These commands are part of the Bash shell itself, meaning they are executed directly by the shell.
 - Examples: `cd`, `echo`, `exit`, `pwd`, `history`, `type`, `alias`, `export`, etc.
@@ -481,4 +480,13 @@ Both commands are used to find files, but they work differently:
 ## Висновки  
 
 >[!IMPORTANT]
-> 1
+> Made by Didusenko Oleksandr
+In the course of the lab, we learned the basics of working at the command line of operating systems of various families, including Linux. We examined the basic CLI commands, their parameters and arguments, as well as the features of working with the terminal.
+
+We created a glossary of basic English terms related to the command line and reviewed key commands for navigating the file system, viewing help information, and using command history.
+
+By completing practical tasks, we:
+
+   Learned how to execute basic commands and change their behavior using parameters.
+   Familiarized ourselves with the concepts of environment variables, command history, and aliases.
+   Learned how to get help about commands using man, info, help, and other tools.

@@ -351,6 +351,131 @@ echo $PS1
 
 This will display the current prompt format, which may include special escape sequences for displaying the username, hostname, working directory, and other information.
 
+
+### 4.Changing the `$PS1` Variable in Bash
+
+The `$PS1` variable defines the appearance of the command prompt in Bash.
+
+### Temporarily Changing `$PS1`
+To change its value for the current session, use:
+```bash
+PS1="New prompt > "
+```
+Example:
+```bash
+PS1="\u@\h:\w\$ "
+```
+This will display the prompt as:
+```
+user@hostname:/current_directory$
+```
+
+### Permanently Changing `$PS1`
+To make the change permanent, add it to a configuration file:
+- For **all users**:
+  ```bash
+  echo 'export PS1="\u@\h:\w\$ "' >> /etc/bash.bashrc
+  ```
+- For **the current user**:
+  ```bash
+  echo 'export PS1="\u@\h:\w\$ "' >> ~/.bashrc
+  source ~/.bashrc
+  ```
+
+---
+
+### 5. Using Quotes in Bash
+Bash provides three types of quotes, each with a different purpose:
+
+1. **Single quotes (`' '`)** – Treats everything as literal text, ignoring variable expansion.
+   ```bash
+   echo 'This is $HOME'
+   ```
+   Output: `This is $HOME`
+
+2. **Double quotes (`" "`)** – Expands variables and command substitutions.
+   ```bash
+   echo "My home: $HOME"
+   ```
+   Output: `My home: /home/user`
+
+3. **Backticks or `$()`** – Executes commands and substitutes the result.
+   ```bash
+   echo "Today: $(date)"
+   ```
+   Output: `Today: Fri Feb 21 ...`
+
+---
+
+### 6. Control Statements in Bash
+Control statements allow modifying the execution flow of a script. The main types are:
+
+1. **Conditional statements** (`if`, `case`):
+   ```bash
+   if [ "$USER" == "root" ]; then
+       echo "You are an admin!"
+   else
+       echo "You are a regular user."
+   fi
+   ```
+
+2. **Loops** (`for`, `while`, `until`):
+   ```bash
+   for i in {1..5}; do
+       echo "Step $i"
+   done
+   ```
+
+3. **Control flow operators** (`break`, `continue`):
+   ```bash
+   for i in {1..5}; do
+       if [ "$i" -eq 3 ]; then continue; fi
+       echo "$i"
+   done
+   ```
+
+---
+
+### 7. Meaning of `$` and `#` in Bash Prompt
+If the command prompt ends with:
+```
+user@hostname:~$
+```
+It means you are logged in as a **regular user**.
+
+If the prompt ends with:
+```
+root@hostname:~#
+```
+It indicates you are **logged in as root (administrator)**.
+
+Thus, `$` signifies a regular user, while `#` denotes the root user.
+
+---
+
+### 8. `whereis` and `locate` Commands
+Both commands are used to find files, but they work differently:
+
+1. **`whereis`** – Searches for binary files, libraries, and documentation.
+   ```bash
+   whereis bash
+   ```
+   Example output:
+   ```
+   bash: /bin/bash /usr/share/man/man1/bash.1.gz
+   ```
+
+2. **`locate`** – Quickly searches for files using a pre-built database (`updatedb`).
+   ```bash
+   locate bash
+   ```
+   It will list all files containing "bash" in their name.
+
+ **Key Difference**:
+- `whereis` searches standard system locations for executables and documentation.
+- `locate` is faster but relies on an indexed database that may be outdated (requires periodic updates with `updatedb`).
+
+
 ---
 
 ## Висновки  

@@ -251,6 +251,106 @@
 >[!IMPORTANT]
 > 
 
+## 1.1 Built-in Commands:
+These commands are part of the Bash shell itself, meaning they are executed directly by the shell.
+- Examples: `cd`, `echo`, `exit`, `pwd`, `history`, `type`, `alias`, `export`, etc.
+
+## 1.2 External Commands:
+These are executable programs located in directories defined by the `PATH` environment variable. They are not part of Bash but are external programs that can be run from the shell.
+- Examples: `ls`, `grep`, `cat`, `curl`, `python`, `nano`, etc.
+
+## 1.3 Shell Functions:
+These are user-defined commands or scripts that can be written inside the shell. They can perform complex operations.
+- They are created using the `function` keyword or simply by defining the function name and parentheses, e.g., `my_function() { ... }`.
+
+## 1.4 Control Commands:
+These commands are used to control the flow of execution in the shell. They help in decision-making, looping, and controlling processes.
+- Examples: `if`, `for`, `while`, `until`, `case`, `exit`, `return`, `break`, `continue`.
+
+## 1.5 Job Control Commands:
+These commands are used to manage processes in the background or foreground.
+- Examples: `bg`, `fg`, `jobs`, `kill`, `disown`.
+
+## 1.6 Redirection Commands:
+Used for redirecting input and output from/to files or streams.
+- Examples: `>`, `>>`, `<`, `2>`, `&>`, `tee`, `|` (pipe).
+
+## 1.7 Pipelines:
+A pipeline allows the output of one command to be used as the input to another.
+- Example: `ls | grep "pattern"`
+
+## 1.8 Aliases:
+These are shortcuts or abbreviations for longer commands or a sequence of commands. Users can define their own.
+- Example: `alias ll="ls -l"`
+
+## 1.9 Scripting Commands:
+These commands are used in shell scripts (Bash scripts) to automate tasks. They can include built-in commands, external commands, functions, loops, and conditionals.
+- Examples: `#!/bin/bash` (shebang), `echo`, `read`, `set`.
+
+## 1.10 Environment Management Commands:
+Commands to set and manage environment variables and shell options.
+- Examples: `export`, `unset`, `env`, `set`.
+"""
+## What Are Environment Variables?
+
+Environment variables are dynamic values that affect the behavior of processes running on a computer. These variables are set at the operating system level and are used by programs to configure various settings or to store system-wide or user-specific information.
+
+In simpler terms, they are variables that contain information about the environment in which a program runs. These values can include information about the operating system, user configuration, system paths, and more.
+
+### 2. Examples of Common Environment Variables:
+
+- **PATH**: Specifies a list of directories in which the shell looks for executable files. This variable ensures that commands entered in the terminal are recognized, as long as they exist in one of the directories listed in PATH.
+- **HOME**: Refers to the current user's home directory (e.g., `/home/username` or `/Users/username`).
+- **USER**: Stores the name of the current user.
+- **SHELL**: Specifies the path to the current shell (e.g., `/bin/bash`).
+- **PWD**: Represents the current working directory.
+- **LANG**: Defines the language and locale settings.
+
+### Viewing Environment Variables in the Terminal
+
+To view environment variables in a terminal, you can use the following commands:
+
+- `printenv`: Displays all environment variables.
+- `env`: Lists all environment variables.
+- `echo $VARIABLE_NAME`: Prints the value of a specific variable, e.g., `echo $HOME`.
+- `set`: Shows shell-specific and environment variables.
+- `export`: Displays a list of all exported environment variables.
+## What Are Environment Variables?
+
+Environment variables are dynamic values that affect the behavior of processes running on a computer. These variables are set at the operating system level and are used by programs to configure various settings or to store system-wide or user-specific information.
+
+In simpler terms, they are variables that contain information about the environment in which a program runs. These values can include information about the operating system, user configuration, system paths, and more.
+
+### Examples of Common Environment Variables:
+
+- **PATH**: Specifies a list of directories in which the shell looks for executable files. This variable ensures that commands entered in the terminal are recognized, as long as they exist in one of the directories listed in PATH.
+- **HOME**: Refers to the current user's home directory (e.g., `/home/username` or `/Users/username`).
+- **USER**: Stores the name of the current user.
+- **SHELL**: Specifies the path to the current shell (e.g., `/bin/bash`).
+- **PWD**: Represents the current working directory.
+- **LANG**: Defines the language and locale settings.
+- **PS1**: Defines the primary prompt string, which determines the appearance of the command prompt in the terminal.
+
+### Viewing Environment Variables in the Terminal
+
+To view environment variables in a terminal, you can use the following commands:
+
+- `printenv`: Displays all environment variables.
+- `env`: Lists all environment variables.
+- `echo $VARIABLE_NAME`: Prints the value of a specific variable, e.g., `echo $HOME`.
+- `set`: Shows shell-specific and environment variables.
+- `export`: Displays a list of all exported environment variables.
+
+### 3. Viewing the Contents of `$PS1`
+
+To check the value of `$PS1`, which controls the appearance of the terminal prompt, use the following command:
+
+```bash
+echo $PS1
+```
+
+This will display the current prompt format, which may include special escape sequences for displaying the username, hostname, working directory, and other information.
+
 ---
 
 ## Висновки  

@@ -347,11 +347,54 @@ These tools help keep system performance stable and allow easy management of run
 
 ### Відповіді на контрольні запитання  
 >[!IMPORTANT]
-> 1
+> Made by Didusenko Oleksandr
 
+1. **What is the purpose of the /proc directory in Linux systems. What information does it store?**  
+The /proc directory in Linux is a virtual filesystem that contains information about the current state of the kernel, running processes, memory usage, and other system parameters. It is not stored on disk but is dynamically generated.
+2. **How can you dynamically determine which of any three processes is currently using the most memory? What percentage of memory does it consume of the total amount?**  
+To find the process consuming the most memory among three given ones, use the command:
+```
+  ps -o pid,%mem,rss --sort=-%mem | head -n 4  
+```
+Where:  
+    `%MEM` – The percentage of used memory.  
+    `RSS` (Resident Set Size) – The actual amount of RAM occupied.  
+3. **How do I get the hierarchy of parent processes in Linux systems? Give its structure and describe it.**  
+To view the process hierarchy in Linux, use the command: 
+```
+pstree -p
+```
+Process Structure:  
+    `init` or `systemd` (PID 1) – The main process.  
+    Child processes (e.g., `sshd`, `cron`, `dbus-daemon`).  
+    User processes (terminals, browsers, editors, etc.).  
+4. **What is the difference between the top and ps commands?**
+Difference Between top and ps
+
+    `top` – Provides real-time dynamic process monitoring.  
+    `ps` – Shows a snapshot of the current processes at the moment of execution
+5. **What additional features does htop implement compared to top?**
+Additional Features of htop:  
+    Interactive process management (terminate, change priority).  
+    Color-coded resource usage display.  
+    A user-friendly interface with scrolling support.  
+6. **Describe the components of your mobile OS for monitoring processes running in the system?**  
+Android:  
+    `dumpsys activity processes` – View running processes.  
+    `top` or `ps` via ADB.
+7. **If your mobile OS supports terminal control of processes, describe how.**  
+Android:  
+    Via `adb shell`, you can use `kill`, `ps`, `top`.  
+    Task managers are available in custom ROMs.
+8. **Is it possible to install third-party software tools that allow you to organize the management and monitoring of processes in your mobile phone? Briefly describe them.**  
+Android: `SystemPanel`, `Simple System Monitor`.
 ---
 
 ## Висновки  
 
 >[!IMPORTANT]
-> 1
+>Made by Didusenko Oleksandr
+
+The lab covered the basic commands for managing processes in Linux, including ps, top, htop, kill, killall, jobs, bg, and fg. The possibilities of monitoring running processes, their characteristics, and ways to interact with them through the Bash command interface were explored.Practical tasks helped to consolidate knowledge on how to view active processes, identify resource-intensive tasks and complete them. Methods of managing background processes and using signals to control them were also discussed.
+
+The knowledge gained is important for administering Linux systems, optimizing their performance, and responding quickly to CPU and memory loads.

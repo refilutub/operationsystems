@@ -31,8 +31,8 @@
 #### **Лабораторні роботи**
 - [x] [Лабораторна робота 1](https://github.com/refilutub/operationsystems/tree/%D0%9B%D0%B0%D0%B1%D0%BE%D1%80%D0%B0%D1%82%D0%BE%D1%80%D0%BD%D0%B0-%D1%80%D0%BE%D0%B1%D0%BE%D1%82%D0%B0-%E2%84%961-(%D0%B7%D0%B2%D1%96%D1%82))
 - [x] [Лабораторна робота 2](https://github.com/refilutub/operationsystems/tree/%D0%9B%D0%B0%D0%B1%D0%BE%D1%80%D0%B0%D1%82%D0%BE%D1%80%D0%BD%D0%B0-%D1%80%D0%BE%D0%B1%D0%BE%D1%82%D0%B0-%E2%84%962-(%D0%B7%D0%B2%D1%96%D1%82))
-- [ ] [Лабораторна робота 3](https://github.com/refilutub/operationsystems/tree/Lab-3)
-- [ ] [Лабораторна робота 4](https://github.com/refilutub/operationsystems/tree/Lab-4)
+- [x] [Лабораторна робота 3](https://github.com/refilutub/operationsystems/tree/Lab-3)
+- [x] [Лабораторна робота 4](https://github.com/refilutub/operationsystems/tree/Lab-4)
 - [ ] [Лабораторна робота 5](https://github.com/refilutub/operationsystems/tree/Lab-5)
 - [ ] [Лабораторна робота 6](https://github.com/refilutub/operationsystems/tree/Lab-6)
 - [ ] [Лабораторна робота 7](https://github.com/refilutub/operationsystems/tree/Lab-7)

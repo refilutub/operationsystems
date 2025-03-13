@@ -282,11 +282,42 @@ rmdir directory_name – Remove an empty directory.
 
 ### Відповіді на контрольні запитання  
 >[!IMPORTANT]
-> 1
-
+>This part made by Didusenko Oleksandr  
+1.**How can I view the path to a user's home directory using the echo command? There are 2 ways, please see both examples in the terminal**  
+echo $HOME
+echo ~  
+2.**Is it possible to view the contents of the root directory while in the user's home directory without going to the root directory? Demonstrate this on the command line.**  
+ls /  
+3.**How can I add information to an empty file in the terminal?**  
+echo "This is a test" >> myfile.txt  
+4.**How do I copy and delete an existing directory? Will there be a difference in commands if the directory is not empty at the same time?**  
+If directory is empty:  
+`rmdir myfolder`  
+If directory have files:  
+`rm -r myfolder`  
+5.**In which of the following examples is the file moved, renamed, or both?
+mv /work/tech/comp.png. /Desktop 
+mv /work/tech/comp.png. /work/tech/my_car.png 
+mv /work/tech/comp.png. /Desktop/computer.png**  
+Moves a file to /Desktop while keeping its name:  
+mv /work/tech/comp.png /Desktop
+Rename the file , leaving it in the same directory.  
+mv /work/tech/comp.png /work/tech/my_car.png  
+Move and rename at the same time:  
+mv /work/tech/comp.png /Desktop/computer.png
 ---
 
 ## Висновки  
 
 >[!IMPORTANT]
-> 1
+> This part made by Didusenko Oleksandr
+
+During the laboratory work, the basic commands for navigating the file system and managing files and directories in the Linux environment were considered. Practical skills of working in the Bash command shell were consolidated, including:  
+    File system navigation - cd, pwd, ls commands allow you to navigate between directories and view their contents.
+    Work with files - create (touch), browse (cat), edit (echo), copy (cp), move and rename (mv), and delete (rm).
+    Work with directories - create (mkdir), delete (rmdir and rm -r), copy (cp -r).
+    Globbing - using the characters *, ?, [] to work with groups of files.
+    Understanding of FHS (Filesystem Hierarchy Standard) - a standard that defines the location of system files in Linux.
+
+The acquired knowledge and skills allow you to work effectively with the command line in Linux, which is important for system administration, task automation, and working with server environments.
+

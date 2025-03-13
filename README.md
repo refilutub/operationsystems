@@ -62,8 +62,51 @@
 
 ## Завдання для попередньої підготовки  
 >[!IMPORTANT]
->1
+>This part made by Didusenko Oleksandr  
+1. **Read the brief theoretical information before the lab and make a small glossary of basic English terms on the purpose of commands and their parameters. **
+**Main commands: **  
+ls – view the contents of the directory  
+cd – directory change  
+cp – used to copy files  
+mv – move and rename file  
+rm – used to delete a file  
+mkdir – create new directory  
+rmdir – deleting empty directory  
+touch – create empty file  
+2. **Based on the material reviewed, answer the following questions:**  
+ 2.1 **Compare the file structures of a Windows-like and a Linux-like system.**   
 
+| **Feature**                 | **Windows**                                        | **Linux**                                   |
+|-----------------------------|---------------------------------------------------|---------------------------------------------|
+| **Root Directory**          | `My Computer` or `C:\`                           | `/` (root directory)                        |
+| **Device Locations**        | Each device has a letter (`C:`, `D:` etc.)       | All devices are mounted in directories (`/mnt`, `/media`) |
+| **User Home Directory**     | `C:\Users\Username\`                             | `/home/Username/`                           |
+| **System Files**            | `C:\Windows\System32\`                           | `/bin`, `/sbin`, `/etc`                     |
+| **Configuration Files**     | Windows Registry (`regedit`) and `.ini` files    | Text-based configuration files in `/etc`   |
+| **Programs**                | `C:\Program Files\`, `C:\Program Files (x86)\`   | `/usr/bin/`, `/opt/`, `/usr/local/bin/`     |
+| **Device Drivers**          | `C:\Windows\System32\Drivers\`                   | `/dev/` (virtual device files)             |
+| **Logs (Event Logs)**       | `C:\Windows\System32\winevt\Logs\`               | `/var/log/`                                |
+| **Temporary Files**         | `C:\Users\Username\AppData\Local\Temp\`          | `/tmp/`                                    |
+| **File System**             | NTFS, FAT32, exFAT                               | ext4, XFS, Btrfs, ZFS                      |
+
+ 2.2 **Explain the concept of FHS. How is this standard used in the context of file systems?**  
+**The Filesystem Hierarchy Standard (FHS)** - is a standard for file hierarchy in Unix-like operating systems such as Linux. It defines how directories and files are organized in an operating system to ensure consistency across different Linux distributions.  
+
+The main goals of FHS:  
+    **Consistency** - files and directories have the same location on all FHS-compliant systems.  
+    **Compatibility** - software developed for one FHS-compliant system will work on other systems.  
+    **Ease of administration** - administrators can easily find the files they need.  
+ The FHS standard defines which directories must be present in the system and what they contain.  
+ 
+ 2.3 **List the basic commands for working with files and directories in Linux: create, move, copy, delete.**  
+
+touch filename – Create an empty file.  
+mkdir directory_name – Create a new directory.  
+mv source destination – Move or rename a file/directory.  
+cp source destination – Copy a file.  
+rm filename – Delete a file.  
+rm -r directory_name – Delete a directory and its contents.  
+rmdir directory_name – Remove an empty directory.  
 
 ---
 

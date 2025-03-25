@@ -116,6 +116,33 @@
 | `rm -r etc`                                               | Видаляє директорію `etc` та її вміст.                                                                                 | Без архівування / стиснення        |
 | `unzip udev.zip`                                          | Розпаковує архів `udev.zip` в поточну директорію.                                                                    | **zip**                             |
 
+3.  Ознайомтесь з командою tar та за її допомогою виконати у терміналі наступні дії:
+   
+- створити файл з розширенням .tar;
+  ![image](https://github.com/user-attachments/assets/2c4989cd-bbd6-4b52-bb8e-8b5da99a84b6)
+
+- створити файл з розширенням .tar, що складається з декількох файлів і каталогів  одночасно;
+  ![image](https://github.com/user-attachments/assets/9a92b699-c9b2-4343-ba29-0abf3afab72b)
+
+- перегляду вмісту файлу;
+  ![image](https://github.com/user-attachments/assets/1e512e44-d824-439c-bd9d-218effbe96c3)
+
+- витягти вміст файлу tar;
+  ![image](https://github.com/user-attachments/assets/880a495c-de8e-4d6e-958c-e276feb14a19)
+
+- створити архівний файл tar, стиснений за допомогою bzip;
+  ![image](https://github.com/user-attachments/assets/1b2da58c-7fa7-444a-b71f-4048650a6af9)
+
+- витягти вміст файлу tar bzip;
+  ![image](https://github.com/user-attachments/assets/897a6160-904b-49de-a0b9-8d505602619f)
+
+- створити архівний tar файл, стисненого за допомогою gzip;
+  ![image](https://github.com/user-attachments/assets/a7eadae8-872e-48b2-911d-d827fecb302c)
+
+- витягти вміст файлу tar gzip.
+![image](https://github.com/user-attachments/assets/36cb0ae2-18d1-4e66-9ec1-63371827cfaa)
+
+
 4.*Як буде відбуватись перенаправлення потоків виведення в bash для наступних дій з командами (позначено як cmd) та файлами (позначено як file):
 
 

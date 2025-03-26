@@ -21,9 +21,9 @@
 #### **СРС_WORK-CASE**
 - [x] [СРС_WORK-CASE 1](https://github.com/refilutub/operationsystems/tree/%D0%A1%D0%A0%D0%A1_WORK-CASE-%E2%84%961)
 - [x] [СРС_WORK-CASE 2](https://github.com/refilutub/operationsystems/tree/%D0%A1%D0%A0%D0%A1_WORK-CASE-%E2%84%962)
-- [ ] [СРС_WORK-CASE 3](https://github.com/refilutub/operationsystems/tree/SRC_WORK-CASE-3)
-- [ ] [СРС_WORK-CASE 4](https://github.com/refilutub/operationsystems/tree/SRC_WORK-CASE-4)
-- [ ] [СРС_WORK-CASE 5](https://github.com/refilutub/operationsystems/tree/SRC_WORK-CASE-5)
+- [ ] [СРС_WORK-CASE 3](https://github.com/refilutub/operationsystems/blob/main/%D0%A1%D0%A0%D0%A1_WORK-CASE%20%E2%84%963.md)
+- [ ] [СРС_WORK-CASE 4](https://github.com/refilutub/operationsystems/blob/main/%D0%A1%D0%A0%D0%A1_WORK-CASE%20%E2%84%964.md)
+- [ ] [СРС_WORK-CASE 5](https://github.com/refilutub/operationsystems/blob/main/%D0%A1%D0%A0%D0%A1_WORK-CASE%20%E2%84%965.md)
 - [ ] [СРС_WORK-CASE 6](https://github.com/refilutub/operationsystems/tree/SRC_WORK-CASE-6)
 - [ ] [СРС_WORK-CASE 7](https://github.com/refilutub/operationsystems/tree/SRC_WORK-CASE-7)
 - [ ] [СРС_WORK-CASE 8](https://github.com/refilutub/operationsystems/tree/SRC_WORK-CASE-8)

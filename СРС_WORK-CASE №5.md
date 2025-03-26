@@ -1,6 +1,7 @@
 <div align="center">
   <img src="https://github.com/user-attachments/assets/dcdd0d7c-164c-4a93-a6d8-84b6015c07aa" height="200" width="300" alt="exolutioneast">
 </div>
+
 ### 1. При роботі з персональним комп’ютером дуже часто виникає необхідність підключати периферійне обладнання. На прикладі принтера та флешки опишіть який механізм має ОС Linux для роботи з ними.
 
   In Linux, peripheral devices such as printers and USB flash drives are managed through a combination of device drivers, mounting mechanisms, and system services like CUPS (for printers) and udev (for detecting devices).

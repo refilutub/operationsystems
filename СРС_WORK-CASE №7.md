@@ -1,3 +1,45 @@
+<div align="center">
+  <img src="https://github.com/user-attachments/assets/dcdd0d7c-164c-4a93-a6d8-84b6015c07aa" height="200" width="300" alt="exolutioneast">
+</div>
+
+![made-by-didusenko-oleksandr](https://github.com/user-attachments/assets/5659ba1e-9a2b-4c70-a617-173d94c180d0)
+
+## 1. Планувальник задач (Task Scheduler)
+
+### 1.1 Основні функції планувальника
+
+* **Task Scheduling** — автоматичний запуск задач за розкладом в будь-якій ОС.
+* **Job Automation** — можливість налаштування послідовного виконання скриптів чи програм без втручання користувача.
+* **Resource Management** — розподіл системних ресурсів під час виконання задач.
+* **Error Handling & Logging** — фіксація результатів виконання (логи) та реагування на помилки.
+* **Notification** — відправка повідомлень (email, сповіщення) про виконання задач.
+
+### 1.2 Порівняння Windows vs Linux
+
+| Функція              | Windows Task Scheduler                  | Linux Cron                          |
+| -------------------- | --------------------------------------- | ----------------------------------- |
+| Інтерфейс            | GUI (Task Scheduler) + CLI (`schtasks`) | CLI (`crontab`)                     |
+| Формат конфігурації  | XML-файли + GUI                         | Таблиця записів (crontab)           |
+| Granularity          | Мінімум 1 хвилина                       | Мінімум 1 хвилина                   |
+| Додаткові можливості | Тригери за подіями (Event Trigger)      | Альтернативи: `systemd timer`, `at` |
+| Логи                 | Windows Event Viewer                    | `/var/log/syslog`, `/var/log/cron`  |
+
+#### Windows Task Scheduler
+
+* **GUI**: графічний інтерфейс для створення та керування задачами.
+* **CLI**: команда `schtasks /Create /SC DAILY /TN "Backup" /TR "C:\backup.bat" /ST 08:00`.
+* **Trigger Types**: On schedule, On event, At startup, On idle і т.д.
+
+#### Linux Cron
+
+* **CLI**: `crontab -e`, `crontab -l`, `crontab -r`.
+* **Cron Format**: `* * * * * command` (хвилина, година, день, місяць, день тижня).
+* **Альтернативи**:
+
+  * **systemd timers** — керування задачами через `systemd`-юнити та таймери.
+  * **at** — одноразове відкладене виконання задачі.
+
+---
 
 ## 2. Планування задач через Cron
 

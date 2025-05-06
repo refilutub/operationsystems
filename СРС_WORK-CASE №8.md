@@ -12,7 +12,8 @@ sudo apt install -y ranger
 ranger
 ```
 
-(Скріншот виконання команди `ranger` та вигляду файлового менеджера)
+![image](https://github.com/user-attachments/assets/df132499-cd6b-44fe-80c1-135b1af048cc)
+
 
 ---
 
@@ -25,7 +26,8 @@ sudo apt install -y w3m
 w3m https://www.google.com
 ```
 
-(Скріншот відображення сторінки Google в `w3m`)
+![image](https://github.com/user-attachments/assets/370cf456-270c-4430-865a-e3431c79dbf2)
+
 
 ---
 
@@ -38,7 +40,8 @@ sudo apt install -y mutt
 mutt
 ```
 
-(Скріншот основного інтерфейсу `mutt` після запуску)
+![image](https://github.com/user-attachments/assets/a6d3f290-602f-4cda-9011-9838ff91855d)
+
 
 ---
 
@@ -57,7 +60,8 @@ cmus
 * <kbd>Enter</kbd> — Відтворення вибраного файлу
 * <kbd>q</kbd> — Вихід з програми
 
-(Скріншот списку пісень у `cmus`)
+![image](https://github.com/user-attachments/assets/e8729b66-ee4b-43d5-9d19-af6de4807e68)
+
 
 ---
 
@@ -75,7 +79,8 @@ rtorrent
 * <kbd>Enter</kbd> на рядку з `.torrent` — Додавання трекера
 * <kbd>Ctrl</kbd>+<kbd>q</kbd> — Вихід з програми
 
-(Скріншот інтерфейсу `rtorrent` з активним завантаженням)
+![image](https://github.com/user-attachments/assets/71c6bfa7-d595-4aa5-9e31-d758624cab59)
+
 
 ---
 
@@ -94,7 +99,8 @@ calcurse
 * <kbd>C</kbd> — Перехід у календар (Calendar view)
 * <kbd>h</kbd> — Виклик довідки (Help)
 
-(Скріншот календаря та списку справ у `calcurse`)
+![image](https://github.com/user-attachments/assets/bf5fea7d-468a-4740-9109-ddc47af89788)
+
 
 ---
 
@@ -111,7 +117,7 @@ fim /шлях/до/файлу/картинка.png
 
 * <kbd>q</kbd> — Вихід
 
-(Скріншот зображення, відображеного через `fim`)
+![image](https://github.com/user-attachments/assets/af3f8f1c-0ad2-4053-abcf-46729fddd387)
 
 ---
 
@@ -139,7 +145,8 @@ vim /path/to/file.txt
 * <kbd>:</kbd><kbd>q</kbd> — Вийти (quit)
 * <kbd>:</kbd><kbd>wq</kbd> — Зберегти й вийти
 
-(Скріншот відкритого файлу в `vim`)
+![image](https://github.com/user-attachments/assets/43db2fe9-a7b3-44da-90a8-77004220b6f5)
+
 
 ---
 
@@ -164,7 +171,8 @@ htop
 * <kbd>F9</kbd> — Завершити процес (Kill)
 * <kbd>q</kbd> — Вихід
 
-(Скріншот інтерфейсу `htop` із процесами)
+![image](https://github.com/user-attachments/assets/5bed15e8-c7cf-496e-8fe3-a792e793c5d4)
+
 
 ---
 
@@ -182,7 +190,8 @@ sl
 
 Виконайте замість `ls`, щоб побачити анімацію потяга.
 
-(Скріншот анімації паровозу від команди `sl`)
+![image](https://github.com/user-attachments/assets/9613114b-e592-4d6a-af0b-7624e2ad4eae)
+
 
 ---
 
@@ -208,7 +217,8 @@ cowsay "Lets watch deMO"
 
 Виводить текст у "хмарці" від імені корови.
 
-(Скріншот результату команди `cowsay`)
+![image](https://github.com/user-attachments/assets/7f8341d7-b01b-4a0e-80d4-c8a4cf6852b3)
+
 
 ---
 
@@ -221,9 +231,15 @@ sudo apt install -y fortune cmatrix nyancat oneko
 ```
 
 * `fortune` — випадкові цитати
+  ![image](https://github.com/user-attachments/assets/e79760c3-c449-4356-a92b-f967dffe75a5)
+  
 * `cmatrix` — ефект зеленого дощу символів
-* `nyancat` — анімація Nyan Cat
-* `oneko` — кішка за курсором
+  ![image](https://github.com/user-attachments/assets/3096e7e3-14a2-4871-acf0-4abd5e00dc49)
 
----
+* `nyancat` — анімація Nyan Cat
+  ![image](https://github.com/user-attachments/assets/c481079f-9a40-498e-8355-589c95ed9611)
+
+* `oneko` — кішка за курсором
+  ![image](https://github.com/user-attachments/assets/da9e25c6-158d-4e79-a117-a6168f38fc72)
+
 

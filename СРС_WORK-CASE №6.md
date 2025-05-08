@@ -39,6 +39,8 @@ Fish (Friendly Interactive SHell):
 ![image](https://github.com/user-attachments/assets/96499d8a-d44c-481f-8a7e-91f84aa51abc)
 (Виведення інформації з консолі користувача Developers)
 
+![Image](https://github.com/user-attachments/assets/2a723a11-468b-422f-815c-a9799b88758c)
+(Виведення інформації з консолі користувача Financiers та Guests)
 
 
 

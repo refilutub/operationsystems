@@ -11,6 +11,7 @@ Zsh (Z Shell):
 Fish (Friendly Interactive SHell):  
 `sudo apt update`  
 `sudo apt install fish`    
+
 ---
 
 ### Необхідно створити 10 нових користувачі в вашій системі та розподілити їх по групам:  
